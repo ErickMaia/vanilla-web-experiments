@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Testing content editable property</title>
+        <title>Experimenting with vanilla web technologies</title>
         <link rel="stylesheet" href="meucss.css">
+        <script src=meuscript.js></script>
     </head>
     <body>
-        <p contenteditable="true">
-            Me edite
-        </p>
+        <!-- <p contenteditable="true">
+            Edit Me
+        </p> -->
+
+        <input id="myNumber" type=number value="">
+        <input type=button onclick="setNumberValue(sumOfANumberWithAllItsPrecedents)" value="Sum number with all its precedents">
+        <p id="resultLabel">result will be displayed here</p>
+
     </body>
 </html>
