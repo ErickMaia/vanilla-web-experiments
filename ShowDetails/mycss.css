@@ -1,0 +1,43 @@
+div{
+    width:100px;
+    height:100px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    text-align: center;
+}
+
+#evenOrOdd{
+    background-color: chocolate;
+    z-index: 1;
+    position: absolute; 
+    top: 0px; 
+    color: white
+}
+
+#evenOrOdd p{
+    padding-top: 30%
+}
+
+#number{
+    background-color: cornsilk;
+    z-index: -1;
+    top: 0px;
+    transition: height 1s;
+}
+
+#number p{
+    transition: padding-top 1s;
+}
+
+#evenOrAdd:hover{
+    cursor:pointer; 
+}
+
+#evenOrOdd:hover + #number{
+    height:140px;
+}
+
+#evenOrOdd:hover + #number p{
+    padding-top: 100%; 
+    transition: padding-top 1s;
+}
